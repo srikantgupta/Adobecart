@@ -1,2 +1,2 @@
-# Adobecart
-cart application using angular
+# CartApp
+ecommerce site demo in Angular

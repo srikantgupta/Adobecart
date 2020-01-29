@@ -1,0 +1,87 @@
+%price-class
+    text-align: justify
+    padding: 10px
+    justify-content: space-between  
+
+%container-class
+    top: 0
+    bottom: 0
+    left: 0
+.price-calc
+    @extend %price-class
+
+.price-total
+    @extend %price-class
+    font-weight: bold
+    border-top: 1px solid darkgray    
+.container
+    @extend %container-class
+    position: absolute
+    overflow: hidden
+    width: 100%
+.checkout-page-container
+    @extend %container-class
+    width: 100% 
+    flex:60%
+    flex-grow: 1
+    overflow: auto
+    min-height: 0
+    margin-top: 30px
+.checkout-list
+    flex: 70%
+    padding: 10px
+    flex-grow: 1
+    min-height: 0
+    overflow: auto
+.price-details
+    flex: 30%
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2)
+    border: 1px solid #ccc
+    border-radius: 3px
+    height:200px
+    display: flex
+    margin: 10px
+    flex-direction: column
+
+.price-detail-heading
+    border-bottom: 1px solid darkgray
+    padding:10px
+
+.footer
+    overflow: hidden
+    height: 35px
+.apply-button
+    flex: 100%
+    margin:30px 50px 0px 50px
+    text-align: center
+    align-self: center
+    align-content: center
+    background: #4269EA
+    border-radius: 20px
+    border: none
+    padding: 7px 20px
+    color: white
+    outline: none
+    cursor: pointer
+    font-weight: bold
+
+.apply-button.back
+    padding: 0px
+    color: white
+    padding: 5px
+    font-weight: bold
+    font-size: 15px
+    margin: 0
+    position: absolute
+    top: 76px
+    right: 15px
+
+.apply-button.back:hover
+   background:#42698B
+    opacity: 0.5
+    transition: background 0.5s ease
+
+@media screen and (max-width: 780px) 
+  .checkout-page-container 
+    flex-direction: column  
+  
