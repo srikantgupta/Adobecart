@@ -33,7 +33,7 @@ export class CheckoutComponent implements OnInit {
       
       if(this.cartService.getCartList()){
         this.checkoutItemList=this.cartService.getCartList();
-        console.log(this.checkoutItemList)
+        
         if(!this.checkoutItemList){
           this.checkoutItemList=[]
         }

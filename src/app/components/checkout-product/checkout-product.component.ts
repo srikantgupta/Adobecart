@@ -34,7 +34,7 @@ export class CheckoutProductComponent implements OnInit {
   }
   
   onQtyChange(event){
-    console.log(event)
+    
     let value=event.target.value;
     if(value!=" ")
     {

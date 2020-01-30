@@ -9,20 +9,12 @@ import { CartService } from 'src/app/services/cart.service';
   styleUrls: ['./shopping-list.component.sass']
 })
 export class ShoppingListComponent implements OnInit {
-  
   @Input('itemList') itemList: ItemListModel[];  
   constructor(private cartService:CartService) { }
-  
   ngOnInit() {
-  }
-  
-  
-  onAddToCart(itemModel:ItemListModel){
-    
+  } 
+  onAddToCart(itemModel:ItemListModel){  
     this.cartService.addItemToCart(itemModel);
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    
+    var x = document.getElementById("snackbar"); 
   }
 }

@@ -28,7 +28,7 @@ export class FilterComponent implements OnInit {
   updateTextInput(event){
 
     this.currentFilterValue=event.target.value;
-    console.log(event.target.value)
+    
   }
 
   onSubmit(){

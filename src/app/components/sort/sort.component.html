@@ -32,9 +32,9 @@
             <div class="column">
                 <h4 class="pl-10">SORT BY</h4>
                 <div >
-                    <input id="rb_high_low" class="p-10" type="radio" [(ngModel)]="sortType" name="sort-radio" value="high-low" (click)="updateSortRadio($event, 'high-low')">Price -- High To Low<br>
-                    <input id="rb_low_high" class="p-10" type="radio" [(ngModel)]="sortType" name="sort-radio" value="low-high" (click)="updateSortRadio($event, 'low-high')">Price -- Low To High<br>
-                    <input id="rb_discount" class="p-10" type="radio" [(ngModel)]="sortType" name="sort-radio" value="discount" (click)="updateSortRadio($event, 'discount')">Discount<br>
+                    <input id="rb_high_low" class="p-10" type="radio" [(ngModel)]="sortType" name="sort-radio" value="high-low" (click)="updateSortRadio($event, 'high-low')"><label for="rb_high_low">Price -- High To Low</label> <br>
+                    <input id="rb_low_high" class="p-10" type="radio" [(ngModel)]="sortType" name="sort-radio" value="low-high" (click)="updateSortRadio($event, 'low-high')"><label for="rb_low_high">Price -- Low To High</label> <br>
+                    <input id="rb_discount" class="p-10" type="radio" [(ngModel)]="sortType" name="sort-radio" value="discount" (click)="updateSortRadio($event, 'discount')"><label for="rb_discount">Discount</label><br>
                 </div>
                 <div class="row pop-up-buttons-wrapper">
                     
